@@ -1,5 +1,5 @@
 {
-  description = "Naranj";
+  description = "Naranja";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
