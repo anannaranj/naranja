@@ -25,6 +25,7 @@
       swaylock
       xorg.libX11
       alacritty
+      home-manager
     ] ++ (with inputs; [ zen-browser.packages."${system}".beta ]);
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
