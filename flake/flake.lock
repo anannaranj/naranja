@@ -3,6 +3,26 @@
     "home-manager": {
       "inputs": {
         "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1751760902,
+        "narHash": "sha256-qBGNn7T/zOgUDQTo/RM/D2oxMkB2x36j3ajvpVanEVs=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "8b0180dde1d6f4cf632e046309e8f963924dfbd0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
+    "home-manager_2": {
+      "inputs": {
+        "nixpkgs": [
           "zen-browser",
           "nixpkgs"
         ]
@@ -55,13 +75,14 @@
     },
     "root": {
       "inputs": {
+        "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "zen-browser": "zen-browser"
       }
     },
     "zen-browser": {
       "inputs": {
-        "home-manager": "home-manager",
+        "home-manager": "home-manager_2",
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
