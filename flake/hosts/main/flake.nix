@@ -16,10 +16,18 @@
         specialArgs = { inherit inputs; };
 
         modules = [
-          ./modules
+          ../../modules/hardware-configuration.nix
+          ../../modules/boot.nix
+          ../../modules/locales.nix
+          ../../modules/networking.nix
+          ../../modules/audio.nix
+          ../../modules/environments.nix
+          ../../modules/virtualization.nix
+          ../../modules/packages.nix
 
-          home-manager.nixosModules.home-manager
-          { home-manager = { users.naranj = import ./home-manager/home.nix; }; }
+          #home-manager.nixosModules.home-manager
+          #{ home-manager = { users.naranj = import ./home.nix; }; }
+          ./home.nix
         ];
       };
     };
